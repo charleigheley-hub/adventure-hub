@@ -1,46 +1,89 @@
 
-body {
-    margin: 0;
-    font-family: Georgia, serif;
-    background: #1b1b1b;
-    color: #f4e8c1;
-}
+<!DOCTYPE html>
+<html lang="en">
 
-header {
-    background: #4b2e14;
-    padding: 20px;
-    text-align: center;
-    font-size: 36px;
-    font-weight: bold;
-}
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Players</title>
+<link rel="stylesheet" href="style.css">
+</head>
 
-nav {
-    background: #2a2a2a;
-    text-align: center;
-    padding: 15px;
-}
+<body>
 
-nav a {
-    color: gold;
-    text-decoration: none;
-    margin: 0 20px;
-    font-size: 20px;
-}
+<header>
+🧙 Adventurers
+</header>
 
-nav a:hover {
-    color: white;
-}
+<nav>
+<a href="index.html">Home</a>
+<a href="map.html">Map</a>
+<a href="notes.html">Notes</a>
+<a href="quests.html">Quests</a>
+<a href="players.html">Players</a>
+</nav>
 
-main {
-    max-width: 1000px;
-    margin: 40px auto;
-    padding: 20px;
-}
+<main>
 
-.card {
-    background: #333;
-    border-radius: 10px;
-    padding: 20px;
-    margin-bottom: 20px;
-}
+<div class="card">
+
+<h2>Party Members</h2>
+
+<p>
+Add your adventurers below.
+</p>
+
+</div>
+
+
+<div class="card">
+
+<h2>⚔️ Player One</h2>
+
+<ul>
+<li>Name:</li>
+<li>Character:</li>
+<li>Race:</li>
+<li>Class:</li>
+<li>Level:</li>
+<li>Backstory:</li>
+</ul>
+
+</div>
+
+
+<div class="card">
+
+<h2>⚔️ Player Two</h2>
+
+<ul>
+<li>Name:</li>
+<li>Character:</li>
+<li>Race:</li>
+<li>Class:</li>
+<li>Level:</li>
+<li>Backstory:</li>
+</ul>
+
+</div>
+
+
+<div class="card">
+
+<h2>🎒 Party Inventory</h2>
+
+<ul>
+<li>Gold:</li>
+<li>Magic Items:</li>
+<li>Important Items:</li>
+</ul>
+
+</div>
+
+
+</main>
+
+</body>
+
+</html>
 
