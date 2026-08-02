@@ -1,19 +1,17 @@
-
-
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Map Room</title>
+<title>World Map</title>
 <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
 <header>
-🗺️ The World Map
+🗺️ World Map
 </header>
 
 <nav>
@@ -22,6 +20,8 @@
 <a href="notes.html">Notes</a>
 <a href="quests.html">Quests</a>
 <a href="players.html">Players</a>
+<a href="dice.html">Dice</a>
+<a href="dm.html">DM</a>
 </nav>
 
 
@@ -29,57 +29,58 @@
 
 <div class="card">
 
-<h2>Campaign Map</h2>
+<h2>The Known World</h2>
 
 <p>
-Upload your world map into the images folder and name it:
+Your map will appear below.
 </p>
 
-<code>
-world-map.jpg
-</code>
-
-<br><br>
+<div class="map-container">
 
 <img src="images/world-map.jpg"
 alt="World Map"
-style="width:100%; border-radius:15px;">
+class="map-image">
+
+<button class="marker city"
+onclick="showLocation('Capital City - The heart of the kingdom. Home of kings, merchants and secrets.')">
+🏰
+</button>
+
+<button class="marker forest"
+onclick="showLocation('Dark Forest - A dangerous place filled with ancient magic.')">
+🌲
+</button>
+
+<button class="marker dragon"
+onclick="showLocation('Dragon Mountains - Something ancient sleeps beneath the peaks.')">
+🐉
+</button>
 
 </div>
 
 
-<div class="card">
+<h2 id="location">
+Click a location marker
+</h2>
 
-<h2>📍 Known Locations</h2>
-
-<ul>
-
-<li>
-🏰 <b>Capital City</b><br>
-The centre of civilisation. Secrets hide beneath the streets.
-</li>
-
-<li>
-🌲 <b>Dark Forest</b><br>
-A dangerous woodland filled with unknown creatures.
-</li>
-
-<li>
-⛰️ <b>Dragon Mountains</b><br>
-Rumours say an ancient dragon sleeps here.
-</li>
-
-<li>
-🏚️ <b>Forgotten Ruins</b><br>
-A lost civilisation waiting to be discovered.
-</li>
-
-</ul>
 
 </div>
 
 
 </main>
 
+
+<script>
+
+function showLocation(text){
+
+document.getElementById("location").innerHTML=text;
+
+}
+
+</script>
+
+
 </body>
+
 </html>
