@@ -1,1 +1,66 @@
 
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dice Roller</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+🎲 Dice Chamber
+</header>
+
+<nav>
+<a href="index.html">Home</a>
+<a href="map.html">Map</a>
+<a href="notes.html">Notes</a>
+<a href="quests.html">Quests</a>
+<a href="players.html">Players</a>
+<a href="dice.html">Dice</a>
+</nav>
+
+
+<main>
+
+<div class="card">
+
+<h2>Roll the Dice</h2>
+
+<button onclick="roll(20)">Roll D20</button>
+<button onclick="roll(12)">Roll D12</button>
+<button onclick="roll(10)">Roll D10</button>
+<button onclick="roll(😎">Roll D8</button>
+<button onclick="roll(6)">Roll D6</button>
+<button onclick="roll(4)">Roll D4</button>
+
+<h2 id="result">
+Waiting for roll...
+</h2>
+
+</div>
+
+
+</main>
+
+
+<script>
+
+function roll(sides){
+
+let result = Math.floor(Math.random()*sides)+1;
+
+document.getElementById("result").innerHTML =
+"🎲 You rolled a " + result + " on a D" + sides;
+
+}
+
+</script>
+
+
+</body>
+</html>
