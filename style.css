@@ -1,1 +1,46 @@
 
+body {
+    margin: 0;
+    font-family: Georgia, serif;
+    background: #1b1b1b;
+    color: #f4e8c1;
+}
+
+header {
+    background: #4b2e14;
+    padding: 20px;
+    text-align: center;
+    font-size: 36px;
+    font-weight: bold;
+}
+
+nav {
+    background: #2a2a2a;
+    text-align: center;
+    padding: 15px;
+}
+
+nav a {
+    color: gold;
+    text-decoration: none;
+    margin: 0 20px;
+    font-size: 20px;
+}
+
+nav a:hover {
+    color: white;
+}
+
+main {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 20px;
+}
+
+.card {
+    background: #333;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
